@@ -1,0 +1,66 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: calc(100% - 16px);
+  background: #FFFFAA;
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+
+  grid-template-rows: 4em 4em auto 2em;
+
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+}
+
+#history .wrapper {
+  grid-template-areas: 
+    "header header"
+    "nav nav"
+    "dates main"
+    "footer footer"
+}
+
+header {
+  grid-area: header;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+nav ul {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  padding: 0 10px 0 10px;
+}
+
+#history .wrapper > ol {
+  grid-area: dates;
+}
+
+
+footer {
+  grid-area: footer;
+}
