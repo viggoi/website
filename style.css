@@ -45,6 +45,7 @@ nav ul {
 
 nav li {
   display: inline-block;
+
   border: 1px solid black;
   padding: 10px;
 
@@ -59,7 +60,6 @@ main {
 #history .wrapper > ol {
   grid-area: dates;
 }
-
 
 footer {
   grid-area: footer;
