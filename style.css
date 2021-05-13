@@ -28,16 +28,41 @@ body {
     "footer footer"
 }
 
+#units .wrapper {
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "dates main price"
+    "footer footer footer"
+}
+
+#history .wrapper > ol {
+  grid-area: dates;
+}
+
+#history .wrapper > section {
+  grid-area: price;
+}
+
 header {
   grid-area: header;
 }
 
-header > h1 {
-  text-align: center;
-}
-
 nav {
   grid-area: nav;
+}
+
+main {
+  grid-area: main;
+  padding: 0 10px 0 10px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header > h1 {
+  text-align: center;
 }
 
 nav ul {
@@ -53,17 +78,4 @@ nav li {
   padding: 10px;
 
   text-align: center;
-}
-
-main {
-  grid-area: main;
-  padding: 0 10px 0 10px;
-}
-
-#history .wrapper > ol {
-  grid-area: dates;
-}
-
-footer {
-  grid-area: footer;
 }
