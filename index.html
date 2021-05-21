@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Min webbsida</title>
+  <title>Min webbsida - Framsida</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,9 +25,35 @@
       </ul>
     </nav>
 
-    <main>
-      <p>Denna sidan pratar om VR.</p>
-    </main>
+    <!-- innehåll -->
+    <div class="content">
+      <main>
+        <p>Denna sidan pratar om VR.</p>
+      </main>
+
+      <section>
+        <h2>Har du någon information om VR som du vill ska skrivas här?</p>
+          <form action="thanks.html">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            <br />
+
+            <label for="country">Land:</label>
+            <select id="country" name="country">
+              <option value="sweden">Sverige</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <br />
+
+            <label for="info">Info:</label>
+            <input type="text" id="info" name="info" placeholder="Your information.">
+            <br />
+
+            <input type="submit" value="Submit">
+          </form>
+      </section>
+    </div>
 
     <footer>
       <p>Skriven 2021 av Viggo Ingmarsson</p>
